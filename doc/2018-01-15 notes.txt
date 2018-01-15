@@ -1,0 +1,24 @@
+Remarques :
+
+- Perf :
+reste toujours un delta, plus prononcé sur des éléments très spécifiques
+si app reste standard très peu significatif
+
+- Documentation :
+
+
+
+- projet test fourni par xamarin
+http://www.xamarin.com/prebuilt
+
+
+Pour le simulateur iOS depuis PC 
+=> depuis mac : partage, session à distance
+
+
+Pour l'émulateur Android :
+=> GenyMotion
+
+Pour l'émulation iOS :
+=> Agent Xamarin -> connexion au mac
+=> emulation à distance => outil / option / xamarin / plateforme iOS / remote
