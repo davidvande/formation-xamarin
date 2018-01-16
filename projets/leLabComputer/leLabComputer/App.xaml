@@ -3,12 +3,6 @@
 	<Application.Resources>
 		<!-- Application resource dictionary -->
         <ResourceDictionary>
-            <Style TargetType="ContentPage" ApplyToDerivedTypes="true">
-                <Setter Property="BackgroundColor" Value="#F00"></Setter>
-            </Style>
-            <Style TargetType="Button">
-                <Setter Property="BackgroundColor" Value="#0F0"></Setter>
-            </Style>
             <Style x:Key="blueButton" TargetType="Button">
                 <Setter Property="BackgroundColor" Value="#00F"></Setter>
             </Style>

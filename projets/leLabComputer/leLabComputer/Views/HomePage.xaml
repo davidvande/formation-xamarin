@@ -4,19 +4,39 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="leLabComputer.Views.HomePage">
 	<ContentPage.Content>
-        <StackLayout 
-            Orientation="Vertical"
-            HorizontalOptions="Center"
-            VerticalOptions="Center">
-            <Label
-                Text="Home page"
-                HorizontalTextAlignment="Center"
-                ></Label>
-            <Button 
-                Margin="0,0,0,0"
-                Text="Compteur"
-                Clicked="btCompteur_Clicked"
-                Style="{StaticResource blueButton}"></Button>
+        <StackLayout Orientation="Vertical" Spacing="0">
+            <StackLayout BackgroundColor="#518FAA" Margin="0" VerticalOptions="Fill" Padding="20" >
+                <Image Source="lab_logo.png" Aspect="AspectFit" HeightRequest="100"></Image>
+                <Label Text="LE LAB" HorizontalTextAlignment="Center" TextColor="#C1AB24" FontSize="30" >
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="HelveticaNeue-Thin" />
+                                <On Platform="Android" Value="HelveticaNeue-Thin.ttf#HelveticaNeue-Thin" />
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+            </StackLayout>
+            <Image Source="lab_separator.png" Margin="0" HorizontalOptions="FillAndExpand"></Image>
+            <StackLayout 
+                Orientation="Vertical"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                Padding="40">
+                <Button 
+                    Margin="0,0,0,0"
+                    Text="Compteur"
+                    Clicked="btCompteur_Clicked"
+                    BackgroundColor="#C1AB24"
+                    TextColor="#FFF"
+                    Style="{StaticResource blueButton}">
+                    <Button.Text>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Compteur" />
+                            <On Platform="Android" Value="Compteur" />
+                        </OnPlatform>
+                    </Button.Text>
+                </Button>
+            </StackLayout>
         </StackLayout>
 	</ContentPage.Content>
 </ContentPage>
