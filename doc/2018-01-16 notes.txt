@@ -1,0 +1,3 @@
+Android Manifest :
+Numéro de version => int incrémentiel a gérer manuellement
+Nom de version => libre
