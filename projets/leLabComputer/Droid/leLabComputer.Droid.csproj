@@ -128,6 +128,21 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
     <AndroidResource Include="Resources\drawable\lab_logo.png" />
     <AndroidResource Include="Resources\drawable\lab_separator.png" />
+    <AndroidResource Include="Resources\drawable\lab_icon_avion.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\lab_icon_voiture.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\lab_avion.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\lab_voiture.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\lab_icon_compteur.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\HelveticaNeue-Thin.ttf">

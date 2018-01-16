@@ -29,12 +29,14 @@
                     BackgroundColor="#C1AB24"
                     TextColor="#FFF"
                     Style="{StaticResource blueButton}">
-                    <Button.Text>
-                        <OnPlatform x:TypeArguments="x:String">
-                            <On Platform="iOS" Value="Compteur" />
-                            <On Platform="Android" Value="Compteur" />
-                        </OnPlatform>
-                    </Button.Text>
+                </Button>
+                <Button 
+                    Margin="0,0,0,0"
+                    Text="Véhicules"
+                    Clicked="btVehicules_Clicked"
+                    BackgroundColor="#C1AB24"
+                    TextColor="#FFF"
+                    Style="{StaticResource blueButton}">
                 </Button>
             </StackLayout>
         </StackLayout>

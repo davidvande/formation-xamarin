@@ -19,5 +19,11 @@ namespace leLabComputer.Views
             var countPage = new CountPage();
             await Navigation.PushAsync(countPage);
         }
+    
+        async void btVehicules_Clicked(Object sender, EventArgs e)
+        {
+            var vehiculesTabPage = new VehiculesTabPage();
+            await Navigation.PushAsync(vehiculesTabPage);
+        }
     }
 }

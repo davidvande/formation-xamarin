@@ -121,6 +121,19 @@
     <BundleResource Include="Resources\fonts\HelveticaNeue-Thin.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </BundleResource>
+    <BundleResource Include="Resources\lab_icon_avion.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\lab_icon_voiture.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\lab_avion.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\lab_voiture.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\lab_icon_compteur.png" />
   </ItemGroup>
   <Import Project="..\leLabComputer\leLabComputer.projitems" Label="Shared" Condition="Exists('..\leLabComputer\leLabComputer.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
