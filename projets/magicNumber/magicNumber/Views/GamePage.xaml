@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="magicNumber.Views.GamePage" xmlns:fragments="clr-namespace:magicNumber.Views.Fragments">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" StyleClass="yellow">
+            <fragments:HeaderNavigation></fragments:HeaderNavigation>
+            <Label Text="Devinez le nombre entre 0 et 10"></Label>
+            <Entry Placeholder="?" x:Name="numberInput" Keyboard="Numeric" IsEnabled="true" ></Entry>
+            <Button Text="Deviner" Clicked="btDeviner_Clicked"></Button>
+            <fragments:FooterNavigation></fragments:FooterNavigation>
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>
