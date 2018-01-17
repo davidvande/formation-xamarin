@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="leLabComputer.Views.ProductView">
+	<ContentPage.Content>
+        <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+            <Image Source="{Binding Visual}" HorizontalOptions="FillAndExpand" Aspect="AspectFit" HeightRequest="200"></Image>
+            <Label Text="{Binding Name}" HorizontalTextAlignment="Center" Margin="0,20,0,20"></Label>
+            <ScrollView VerticalOptions="FillAndExpand">
+                <Grid VerticalOptions="FillAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="80" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="80" />
+                    </Grid.ColumnDefinitions>
+                    <Label Text="{Binding Description}" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2"></Label>
+                    <Label Text="{Binding Price, StringFormat='{0:C}'}" Grid.Row="0" Grid.Column="1"></Label>
+                    <Button Text="Acheter" Grid.Row="1" Grid.Column="1"></Button>
+                </Grid>
+            </ScrollView>
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>

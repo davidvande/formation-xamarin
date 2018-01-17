@@ -25,5 +25,11 @@ namespace leLabComputer.Views
             var vehiculesTabPage = new VehiculesTabPage();
             await Navigation.PushAsync(vehiculesTabPage);
         }
+
+        async void btProducts_Clicked(Object sender, EventArgs e)
+        {
+            var productList = new ProductList();
+            await Navigation.PushAsync(productList);
+        }
     }
 }

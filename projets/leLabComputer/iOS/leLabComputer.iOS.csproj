@@ -98,6 +98,19 @@
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\76x76.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\152x152.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\167x167.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\180x180.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\120x120.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\1024x1024.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\60x60.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\87x87.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\2x.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\retina4.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\hd47.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\hd55.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />

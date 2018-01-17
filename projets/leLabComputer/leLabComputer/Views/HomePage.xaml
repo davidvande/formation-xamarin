@@ -34,7 +34,15 @@
                     Margin="0,0,0,0"
                     Text="Véhicules"
                     Clicked="btVehicules_Clicked"
-                    BackgroundColor="#C1AB24"
+                    BackgroundColor="#a4881c"
+                    TextColor="#FFF"
+                    Style="{StaticResource blueButton}">
+                </Button>
+                <Button 
+                    Margin="0,0,0,0"
+                    Text="Produits"
+                    Clicked="btProducts_Clicked"
+                    BackgroundColor="#d9165d"
                     TextColor="#FFF"
                     Style="{StaticResource blueButton}">
                 </Button>

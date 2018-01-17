@@ -1,0 +1,11 @@
+Search :
+https://github.com/rohitvipin/Xamarin-Forms-Custom-Renderer-Samples
+
+
+Pour les icones :
+iOS : 
+	Image de lancement : 
+		source => launch image
+		ecran de lancement vide
+
+	Pour les affectations => Assets.xcassets
