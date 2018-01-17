@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="leLabComputer.Views.CountPage">
+	<ContentPage.Content>
+        <StackLayout Orientation="Vertical" Spacing="0">
+            <StackLayout Orientation="Vertical" BackgroundColor="#518FAA" VerticalOptions="FillAndExpand">
+                <Label 
+                    Text="0"
+                    HorizontalOptions="Center"
+                    FontSize="80"
+                    TextColor="#FFF"
+                    x:Name="lbCompteur"
+                    VerticalOptions="CenterAndExpand"></Label>
+            </StackLayout>
+            <Image Source="lab_separator.png" Margin="0" HorizontalOptions="FillAndExpand"></Image>
+            <StackLayout Orientation="Vertical"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="EndAndExpand"
+                Padding="40">
+                <Button 
+                    Margin="0,0,0,0"
+                    Text="Compter"
+                    BackgroundColor="#C1AB24"
+                    TextColor="#FFF"
+                    Clicked="btCompter_clicked"></Button>
+            </StackLayout>
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>

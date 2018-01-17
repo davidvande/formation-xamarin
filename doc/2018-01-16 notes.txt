@@ -1,3 +1,19 @@
 Android Manifest :
 Numéro de version => int incrémentiel a gérer manuellement
 Nom de version => libre
+
+Publie
+Voir FastLane
+
+Pour les typo :
+sur iOS -> 
+	vérifier que c'est une bundle ressource
+	verifier que la typo est toujours copiée
+	ajouter dans le info.plist
+
+sur Android -> 
+	vérifier que c'est un AndroidAsset
+	verifier que la typo est toujours copiée
+
+pour les dimensions :
+dp => relatif à la résolution
