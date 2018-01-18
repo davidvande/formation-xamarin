@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="magicNumber.Views.Fragments.HeaderNavigation">
+    <AbsoluteLayout>
+        <BoxView BackgroundColor="#A08722" HeightRequest="20" Rotation="160" 
+                AbsoluteLayout.LayoutBounds="-20,65,0.47,10" AbsoluteLayout.LayoutFlags="WidthProportional"></BoxView>
+        <BoxView BackgroundColor="#906702" HeightRequest="20" Rotation="160" 
+                AbsoluteLayout.LayoutBounds="-20,74,0.57,17" AbsoluteLayout.LayoutFlags="WidthProportional"></BoxView>
+        <BoxView BackgroundColor="#B09732" HeightRequest="20" Rotation="160" 
+                AbsoluteLayout.LayoutBounds="-20,99,0.51,6" AbsoluteLayout.LayoutFlags="WidthProportional"></BoxView>
+        <Image Source="star.png" x:Name="star1" 
+                AbsoluteLayout.LayoutBounds="0.4,30,20,20" AbsoluteLayout.LayoutFlags="XProportional"></Image>
+        <Image Source="star.png" x:Name="star2"
+                AbsoluteLayout.LayoutBounds="0.5,32,30,30" AbsoluteLayout.LayoutFlags="XProportional"></Image>
+        <Image Source="star.png" x:Name="star3"
+                AbsoluteLayout.LayoutBounds="0.44,65,10,10" AbsoluteLayout.LayoutFlags="XProportional"></Image>
+    </AbsoluteLayout>
+</ContentView>

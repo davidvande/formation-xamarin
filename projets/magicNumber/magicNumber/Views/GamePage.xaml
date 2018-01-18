@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="magicNumber.Views.GamePage" 
+    ControlTemplate="{StaticResource MagicNumberTemplate}"
+    >
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lbIntro" HorizontalTextAlignment="Center" Margin="0,20,0,20"></Label>
+            <Entry Placeholder="?" x:Name="numberInput" Keyboard="Numeric" IsEnabled="true" ></Entry>
+            <Button Text="Deviner" Clicked="btDeviner_Clicked"></Button>
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>
