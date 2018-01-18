@@ -14,6 +14,8 @@ namespace magicNumber.Views
         {
             InitializeComponent();
 
+            NavigationPage.SetHasNavigationBar(this, false);
+
             resultLabel.Text = string.Format("Le nombre magique est : {0}", result);
 
             animBig = new Animation(v => slContent.Scale = v, 1, 1.1);

@@ -16,6 +16,8 @@ namespace magicNumber.Views
         {
             InitializeComponent();
 
+            NavigationPage.SetHasNavigationBar(this, false);
+
             BorneMin = Constants.BorneMin;
             BorneMax = Constants.BorneMax;
 

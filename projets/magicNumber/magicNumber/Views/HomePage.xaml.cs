@@ -14,6 +14,8 @@ namespace magicNumber.Views
         {
             InitializeComponent();
 
+            NavigationPage.SetHasNavigationBar(this, false);
+
             animBig = new Animation(v => btJouer.Scale = v, 1, 1.1);
             animSmall = new Animation(v => btJouer.Scale = v, 1.1, 1);
 
