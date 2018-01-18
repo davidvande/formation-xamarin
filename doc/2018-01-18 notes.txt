@@ -1,0 +1,14 @@
+Pour les builds :
+- Android
+	Dans le build Android vérifier qu'en release tous les cpu sont actif et que l'option lier uniquement .... est active
+
+	En release : 	
+
+		archiver pour publication
+		une fois archiver => signer et distri
+		créé une clé
+		publier
+
+
+A regarder : 
+ - shared project vs PCL
