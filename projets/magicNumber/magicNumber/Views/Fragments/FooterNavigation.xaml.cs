@@ -6,7 +6,7 @@ using Xamarin.Forms.Xaml;
 
 namespace magicNumber.Views.Fragments
 {
-    public partial class FooterNavigation : View
+    public partial class FooterNavigation : ContentView
     {
         public FooterNavigation()
         {
