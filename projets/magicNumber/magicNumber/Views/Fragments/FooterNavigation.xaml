@@ -3,5 +3,6 @@
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="magicNumber.Views.Fragments.FooterNavigation" >
-    <Label Text="MON FOOTER !!!"></Label>
+    <BoxView BackgroundColor="#B09732" Rotation="-20" 
+                AbsoluteLayout.LayoutBounds="200,0,1000,100" HorizontalOptions="FillAndExpand"></BoxView>
 </ContentView>

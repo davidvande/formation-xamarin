@@ -50,10 +50,12 @@
     <Compile Include="$(MSBuildThisFileDirectory)Views\WinPage.xaml.cs">
       <DependentUpon>WinPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Configuration\Constants.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Views\" />
     <Folder Include="$(MSBuildThisFileDirectory)Models\" />
     <Folder Include="$(MSBuildThisFileDirectory)Views\Fragments\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Configuration\" />
   </ItemGroup>
 </Project>
