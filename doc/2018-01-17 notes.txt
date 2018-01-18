@@ -1,0 +1,54 @@
+Search :
+https://github.com/rohitvipin/Xamarin-Forms-Custom-Renderer-Samples
+
+
+Pour les icones :
+iOS : 
+	Image de lancement : 
+		source => launch image
+		ecran de lancement vide
+
+	Pour les affectations => Assets.xcassets
+
+
+Android :
+	Pas de gestion native
+	A coder
+
+	Aller dans le projet droid et ressources / values
+
+	1 - ajouter le style 
+
+	<style name="splashscreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    2 - Copier les médias
+
+    3 - Dans la main activity ajouter : 
+
+    [Activity(Icon = "@drawable/icon", Theme = "@style/splashscreen", MainLauncher = true, NoHistory = true)]
+    public class SplashScreen : AppCompatActivity
+    {
+        protected override void OnResume()
+        {
+            base.OnResume();
+            StartActivity(typeof(MainActivity));
+        }
+    }
+
+    et sur la class MainActivity => passer le MainLauncher = false
+
+
+    Voir la question du 9-patch
+
+
+Control Entry
+Absolute layout + grid
+Retour nav
+Anim
+
