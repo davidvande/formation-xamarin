@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    Title="Compteur"
+    x:Class="lelab.Views.CountPage">
+	<ContentPage.Content>
+        <StackLayout Spacing="0" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <StackLayout BackgroundColor="#518faa" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                <Label Margin="0,40" x:Name="countLabel" HorizontalOptions="Center" TextColor="White" FontSize="80" Text="0">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <OnPlatform.iOS>HelveticaNeue-Thin</OnPlatform.iOS>
+                            <OnPlatform.Android>HelveticaNeue-Thin.ttf#HelveticaNeue-Thin</OnPlatform.Android>
+                        </OnPlatform>
+                    </Label.FontFamily>
+                 </Label>                    
+            </StackLayout>
+            <Image Source="lab_separator.png" Aspect="AspectFill"/>
+            <Frame VerticalOptions="FillAndExpand" HasShadow="false" Padding="0">
+                <Button Style="{StaticResource boutonLabStyle}" VerticalOptions="Center" Margin="30,0,30,0" Text="Compter" Clicked="CountButtonClick"  />
+            </Frame>
+        </StackLayout>
+        
+	</ContentPage.Content>
+</ContentPage>

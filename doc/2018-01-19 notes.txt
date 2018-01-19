@@ -1,0 +1,3 @@
+Pour http(s) sous iOS :
+
+ - Dans les options du projet : Implémentation HTTPClient => NSURL 

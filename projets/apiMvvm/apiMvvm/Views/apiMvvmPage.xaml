@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:apiMvvm.Views" 
+    xmlns:vm="clr-namespace:apiMvvm.ViewModels"
+    x:Class="apiMvvm.Views.apiMvvmPage">
+    <ContentPage.BindingContext>
+        <vm:MovieViewModel />
+    </ContentPage.BindingContext>
+    <StackLayout Orientation="Vertical">
+    	<Label Text="Rechercher un film :" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,40,0,40" />
+        <Entry Placeholder="?" Text="{Binding search, Mode=TwoWay}" VerticalOptions="Center" HorizontalOptions="FillAndExpand"  />
+        <Button Text="Rechercher" Command="{Binding RechercherCommand}"></Button>
+        <ListView ItemsSource="{Binding MovieResult}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                        <Label Text="Film => "></Label>
+                        <Label Text="{Binding Title}"></Label>
+                    </StackLayout>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

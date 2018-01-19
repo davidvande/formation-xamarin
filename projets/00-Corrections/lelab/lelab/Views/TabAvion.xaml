@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage BackgroundColor="#e7e0cc" Title="Avion" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="lelab.Views.TabAvion">
+	<ContentPage.Content>
+        <StackLayout Margin="30,0" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+            <Image x:Name="avionImage" Source="lab_avion.png" />
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>
