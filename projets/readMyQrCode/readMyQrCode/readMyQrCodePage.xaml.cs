@@ -1,6 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using Xamarin.Forms;
-using ZXing.Mobile;
+using ZXing.Net.Mobile.Forms;
 
 namespace readMyQrCode
 {
@@ -13,16 +14,25 @@ namespace readMyQrCode
 
         async protected void btScan_Clicked(Object sender, EventArgs e)
         {
-            #if __ANDROID__
-                // Initialize the scanner first so it can track the current context
-                MobileBarcodeScanner.Initialize(Application);
-            #endif
+            var options = new ZXing.Mobile.MobileBarcodeScanningOptions();
+            options.PossibleFormats = new List<ZXing.BarcodeFormat>() {
+                    ZXing.BarcodeFormat.QR_CODE
+                };
             
-            var scanner = new ZXing.Mobile.MobileBarcodeScanner();
-            var result = await scanner.Scan();
+            var scanPage = new ZXingScannerPage(options);
 
-            if (result != null)
-                Console.WriteLine("Scanned Barcode: " + result.Text);
+            scanPage.OnScanResult += (result) => {
+                // Stop scanning
+                scanPage.IsScanning = false;
+
+                // Pop the page and show the result
+                Device.BeginInvokeOnMainThread(() => {
+                    Navigation.PopAsync();
+                    DisplayAlert("Scanned Barcode", result.Text, "OK");
+                });
+            };
+            
+            await Navigation.PushAsync(scanPage);
         }
     }
 }

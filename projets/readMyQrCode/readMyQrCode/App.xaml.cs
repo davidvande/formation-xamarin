@@ -8,7 +8,7 @@ namespace readMyQrCode
         {
             InitializeComponent();
 
-            MainPage = new readMyQrCodePage();
+            MainPage = new NavigationPage(new readMyQrCodePage());
         }
 
         protected override void OnStart()
